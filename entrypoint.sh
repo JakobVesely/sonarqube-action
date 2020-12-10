@@ -28,5 +28,5 @@ sonar-scanner \
 	-Dsonar.password=${INPUT_PASSWORD} \
 	-Dsonar.sources=. \
 	-Dsonar.sourceEncoding=UTF-8 \
-	-Dsonar.javascript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
+	-Dsonar.javascript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS} \
 	-Dsonar.branch.name=develop
