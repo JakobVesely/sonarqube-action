@@ -28,4 +28,9 @@ sonar-scanner \
 	-Dsonar.password=${INPUT_PASSWORD} \
 	-Dsonar.sources=. \
 	-Dsonar.sourceEncoding=UTF-8 \
-	-Dsonar.javascript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
+	-Dsonar.exclusions="* * /node_modules/ * * ,* * / *.spec.ts" \
+	-Dsonar.tests=src \
+	-Dsonar.test.inclusions="**/ *.spec.ts" \
+	-Dsonar.ts.tslintconfigpath=tslint.json \
+	-Dsonar.typescript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
+#	-Dsonar.javascript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
