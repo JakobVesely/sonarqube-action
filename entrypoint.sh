@@ -26,11 +26,10 @@ sonar-scanner \
 	-Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
 	-Dsonar.login=${INPUT_LOGIN} \
 	-Dsonar.password=${INPUT_PASSWORD} \
-	-Dsonar.sources=. \
+	-Dsonar.sources=src \
 	-Dsonar.sourceEncoding=UTF-8 \
-	-Dsonar.exclusions="* * /node_modules/ * * ,* * / *.spec.ts" \
+	-Dsonar.exclusions="dist/**/*, node_modules/**/*" \
 	-Dsonar.tests=src \
-	-Dsonar.test.inclusions="**/ *.spec.ts" \
-	-Dsonar.ts.tslintconfigpath=tslint.json \
-	-Dsonar.typescript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
+	-Dsonar.test.inclusions="**/*.spec.ts" \
+	-Dsonar.typescript.lcov.reportPaths=coverage/lcov.info
 #	-Dsonar.javascript.lcov.reportPaths=${SONAR_JAVASCRIPTLCOVREPORTPATHS}
