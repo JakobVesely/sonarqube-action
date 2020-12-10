@@ -35,4 +35,5 @@ inputs:
     required: false
   javascriptLcovReportPaths:
     description: "Path to the .lcov File for sending Code Coverage Report"
+    default: ""
     required: false
