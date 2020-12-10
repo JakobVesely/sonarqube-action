@@ -33,6 +33,6 @@ inputs:
   password:
     description: "Password that goes with the sonar.login username. This should be left blank if an authentication token is being used."
     required: false
-  javascript.lcov.reportPaths:
+  javascriptLcovReportPaths:
     description: "Path to the .lcov File for sending Code Coverage Report"
     required: false
